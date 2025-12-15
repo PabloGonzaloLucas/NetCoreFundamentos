@@ -43,7 +43,7 @@ namespace NetCoreFundamentos
             int anyo3 = anyo / 100;
             int anyo4 = anyo / 400;
 
-            int operacionRara = dia + (mes * 2) + anyo + anyo4 + anyo2 - anyo3 + anyo4 + 2;
+            int operacionRara = dia + (mes * 2) + anyo + mes2 + anyo2 - anyo3 + anyo4 + 2;
             int resul = operacionRara / 7;
             int resulDefinitivo = operacionRara - (resul * 7);
 
@@ -70,8 +70,12 @@ namespace NetCoreFundamentos
                 case 6: 
                     lblTexto.Text = "Tu dia es Viernes";
                     break;
-
             }
+
+            DateTime fecha = new DateTime();
+            var decha = fecha.Day;
+            DateTime.IsLeapYear(2029);
+            Console.WriteLine(DateTime.Now);
         }
     }
 }
