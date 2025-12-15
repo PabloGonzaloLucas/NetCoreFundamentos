@@ -9,6 +9,7 @@ namespace NetCoreFundamentos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
         }
 
         private void btnPulsar_Click(object sender, EventArgs e)
@@ -28,7 +29,12 @@ namespace NetCoreFundamentos
             this.txtNombre.Width = 220;
             this.txtNombre.TextAlign = HorizontalAlignment.Center;
             this.txtNombre.ForeColor = Color.Aqua;
-            
+            string textoNumero = "888";
+            int numero = int.Parse(textoNumero);
+            int mayor = 88;
+            short peque = (short)mayor;
+            string dato = peque.ToString();
+            dato = this.btnPulsar.ToString();
         }
     }
 }
