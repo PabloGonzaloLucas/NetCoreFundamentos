@@ -12,6 +12,7 @@ namespace NetCoreFundamentos
     {
         public Form07SumarNum()
         {
+            
             InitializeComponent();
         }
 
