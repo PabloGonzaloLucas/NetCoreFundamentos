@@ -12,7 +12,12 @@ namespace ProyectoClases
             Debug.WriteLine("COonstructor DIRECTOR");
             this.SalarioMinimo = SalarioMinimo + 200;
         }
-
+        public override int GetDiasVacaciones()
+        {
+            Debug.WriteLine("GetVacaciones() DIRECTOR");
+            return base.GetDiasVacaciones() + 8;
+            
+        }
 
     }
 }

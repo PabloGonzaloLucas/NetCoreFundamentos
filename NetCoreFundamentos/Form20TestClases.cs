@@ -50,11 +50,13 @@ namespace NetCoreFundamentos
             emp.Nombre = "Becario";
             emp.Apellidos = "Becario";
             
+            this.lstPersonas.Items.Add("Vacas empleado: " + emp.GetDiasVacaciones());
             this.lstPersonas.Items.Add("Empleado: " + emp.GetNombreCompleto());
             this.lstPersonas.Items.Add("Salario: " + emp.GetSalarioMinimo()+ "€");
             Director dire = new Director();
             dire.Nombre = "Dire";
             dire.Apellidos = "Dire";
+            this.lstPersonas.Items.Add("Vacas Director: " + dire.GetDiasVacaciones());
             this.lstPersonas.Items.Add("Director: " + dire.GetNombreCompleto());
             this.lstPersonas.Items.Add("Salario: " + dire.GetSalarioMinimo() + "€");
 
