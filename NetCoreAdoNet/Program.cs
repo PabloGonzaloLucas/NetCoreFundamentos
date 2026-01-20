@@ -16,7 +16,8 @@ namespace NetCoreAdoNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form02BuscadorEmpleados());
+            //Application.Run(new Form04EliminarPlantilla());
+            Application.Run(new Form13ParametrosSalida());
         }
     }
 }
