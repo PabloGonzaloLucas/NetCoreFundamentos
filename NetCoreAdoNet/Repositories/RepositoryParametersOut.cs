@@ -20,7 +20,7 @@ namespace NetCoreAdoNet.Repositories
         public RepositoryParametersOut()
         {
             IConfigurationRoot configuration = HelperConfiguration.GetConfiguration();
-            string connectionString = configuration.GetConnectionString("SqlLocalTajamar")
+            string connectionString = configuration.GetConnectionString("SqlLocalTajamar");
             this.cn = new SqlConnection(connectionString);
             this.com = new SqlCommand();
             this.com.Connection = this.cn;

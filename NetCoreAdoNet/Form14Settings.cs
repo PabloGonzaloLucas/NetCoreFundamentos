@@ -37,7 +37,6 @@ namespace NetCoreAdoNet
             this.pictureBox2.Load(imagen2);
             this.BackColor = Color.FromName(colorFondo);
             this.btnLeerSettings.ForeColor = Color.FromName(colorLetra);
-            
         }
 
         private void btnLeerHelper_Click(object sender, EventArgs e)
